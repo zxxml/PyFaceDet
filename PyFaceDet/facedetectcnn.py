@@ -51,6 +51,7 @@ dll.facedetect_cnn.argtypes = [ctypes.POINTER(ctypes.c_ubyte),
                                ctypes.POINTER(ctypes.c_ubyte),
                                ctypes.c_int, ctypes.c_int, ctypes.c_int]
 
+# Faces: [(x y width height confidence angle)]
 Faces = List[Tuple[int, int, int, int, int]]
 c_ubyte_p = ctypes.POINTER(ctypes.c_ubyte)
 c_short_p = ctypes.POINTER(ctypes.c_short)

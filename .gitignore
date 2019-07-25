@@ -1,2 +1,9 @@
+# IDE config and
+# runtime cache
 .idea/
 __pycache__/
+
+# setup cache and
+# generated dists
+dist/
+PyFaceDet.egg-info/

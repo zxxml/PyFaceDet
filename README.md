@@ -16,7 +16,9 @@ PyFace 旨在提供跨平台的开箱即用的人脸检测 API。
 
 ### 使用方式
 
-将本项目存放到你喜欢的位置，然后想办法引用其中的 `facedetectcnn.py` 文件，该文件提供的 API 如下所示。
+<del>将本项目存放到你喜欢的位置，然后想办法引用其中的 `facedetectcnn.py` 文件，该文件提供的 API 如下所示。</del>
+
+使用 `pip install PyFaceDet` 安装它，然后在你的 Python 代码中导入它。顶层文件提供的 API 如下所示。
 
 ```python
 facedetect_cnn(image: Union[str, Path, Image, np.ndarray, bytes], width: int = 0, height: int = 0, step: int = 0) -> Faces
@@ -27,6 +29,10 @@ facedetect_cnn(image: Union[str, Path, Image, np.ndarray, bytes], width: int = 0
 当你传入 `PIL Image` 对象时，你可以选择同时提供 `width` 和 `height` 参数以修改传入 libfacedetection 的图像尺寸（请注意这还将**影响所得的结果**）。
 
 当你传入 `bytes` 对象时，你必须同时提供 `width`、`height` 和 `step` 参数，它们分别代表图像的宽度、高度和每行字节数（通常为宽度的 3 倍）。
+
+返回的 `Faces` 类型实际上是 `List[Tuple[int, int, int, int, int, int]]` 类型，六个整数分别为横坐标、纵坐标、长度、宽度、置信度、角度。
+
+如果你正在使用如 PyCharm 等 IDE，你可能后发现顶层文件还提供其他两个 API。目前来说，它们仅仅是上述 API 的别名，你可以根据自己的喜好使用它们。
 
 ### 开发计划
 
