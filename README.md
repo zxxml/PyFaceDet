@@ -1,11 +1,11 @@
-# PyFace
-PyFace is a Python wrapper of libfacedetection. PyFace 是 libfacedetection 人性化的 Python 封装。
+# PyFaceDet
+PyFaceDet is a Python wrapper of libfacedetection. PyFaceDet 是 libfacedetection 人性化的 Python 封装。
 
 ## 中文文档
 
 ### 作用
 
-PyFace 旨在提供跨平台的开箱即用的人脸检测 API。
+PyFaceDet 旨在提供跨平台的开箱即用的人脸检测 API。
 
 ### 优点
 
